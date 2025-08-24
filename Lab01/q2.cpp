@@ -18,9 +18,9 @@ class Exam
     public:
         Exam(const char* n, const char* ed, int s) 
         {
-            stname = new char[sizeof(n)];
+            stname = new char[sizeof(n)+1];
             strcpy(stname, n);
-            examdate = new char[sizeof(ed)];
+            examdate = new char[sizeof(ed)+1];
             strcpy(examdate, ed);
             score = s;
         }
@@ -30,13 +30,13 @@ class Exam
         void setStname(const char* n) 
         {
             delete[] stname;
-            stname = new char[sizeof(n)];
+            stname = new char[sizeof(n)+1];
             strcpy(stname, n);
         }
         void setdate(const char* date) 
         {
             delete[] examdate;
-            examdate = new char[sizeof(date)];
+            examdate = new char[sizeof(date)+1];
             strcpy(examdate, date);
         }
 
