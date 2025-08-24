@@ -73,4 +73,6 @@ int main()
     b1.setValue(44);
     b1.display("b1"); //changed
     b3.display("b3"); //unchanged
+
+    //since there is deep copy, changing b1 value to 44 wont change b3 value as different memory addresses are assigned
 }
