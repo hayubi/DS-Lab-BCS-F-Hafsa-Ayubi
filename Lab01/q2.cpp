@@ -59,7 +59,8 @@ int main()
     Exam e1("Hafsa", "2-04-2025", 83);
     cout << "Exam1 details: " << endl;
     e1.displayDetails();
-
+    
+    //shallow copy by default
     Exam e2 = e1;
     cout << endl << "Exam2 details: " << endl;
     e2.displayDetails();
@@ -73,4 +74,5 @@ int main()
 
     cout << endl << "Exam1 details: " << endl;
     e1.displayDetails();
+    // because of shallow copy, both e1 and e2 share same address therefore modification of name in e2 will change name of e1 too.
 }
