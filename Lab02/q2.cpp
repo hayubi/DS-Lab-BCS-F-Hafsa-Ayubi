@@ -39,21 +39,30 @@ int main()
         cout << "How many seats do you want to fill? ";
         int size;
         cin >> size;
+        if (size > (rows*cols))
+        {
+            cout << "Boundary error";
+            return 0;
+        }
         cout << "Enter the positions: " << endl;
         for (int i=0; i<size; i++)
         {
             cout << i+1 << ". ";
             int pos, r, c;
             cin >> pos;
-            if (pos >= (rows*cols))
+            if (pos > (rows*cols))
             {
                 cout << "Boundary error";
-                return;
+                return 0;
             }
             else
             {
                 r = pos/cols;
                 c = (pos%cols)-1;
+                if(c==-1)
+                {
+                    c=cols;
+                }
                 arr[r][c] = 1;
             }
         }
@@ -68,7 +77,7 @@ int main()
         cout << endl;
     }
 
-    for (int i=rows-1; i>0; i--)
+    for (int i=rows-1; i>=0; i--)
     {
         delete[] arr[i];
     }
