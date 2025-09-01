@@ -57,13 +57,10 @@ int main()
             }
             else
             {
-                r = pos/cols;
-                c = (pos%cols)-1;
-                if(c==-1)
-                {
-                    c=cols;
-                }
-                arr[r][c] = 1;
+                pos--;             
+                r = pos / col;  
+                c = pos % col; 
+                
             }
         }
     }
