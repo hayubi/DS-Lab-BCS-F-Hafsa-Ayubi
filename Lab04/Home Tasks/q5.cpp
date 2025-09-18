@@ -5,7 +5,6 @@ value. If the element is found, print its index; otherwise, indicate that it's n
 
 #include <iostream>
 using namespace std;
-
 int interpolationSearch(int arr[], int size, int x)
 {
     int low=0;
@@ -38,10 +37,10 @@ int main()
     int x;
     cout << "Enter the value to search: ";
     cin >> x;
-
     int index = interpolationSearch(arr, size, x);
     if (index != -1)
         cout << "Element found at index " << index << endl;
     else
         cout << "Element not found" << endl;
+
 }
