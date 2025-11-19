@@ -7,15 +7,6 @@ sorted linked list. Your implementation should be able to handle empty linked li
 with only one node. Test your implementation with a sample linked list containing the following
 integers: 10, 7, 8, 9, 1, 5, 3. The expected output after sorting should be: 1 3 5 7 8 9 10.*/
 
-/*Task 5:
-Implement Quick Sort using linked list in C++. Define a node for a linked list with integer data
-and a pointer to the next node. Write a function to swap two nodes in the linked list. Write a
-function to partition the linked list using the last node as the pivot. Implement the Quick Sort
-algorithm using the partition function and the swap function. Finally, write a function to print the
-sorted linked list. Your implementation should be able to handle empty linked lists and linked lists
-with only one node. Test your implementation with a sample linked list containing the following
-integers: 10, 7, 8, 9, 1, 5, 3. The expected output after sorting should be: 1 3 5 7 8 9 10.*/
-
 #include <iostream>
 using namespace std;
 
@@ -116,4 +107,5 @@ int main()
     quickSort(head,tail);
     cout << "Sorted list:   ";
     printlist(head);
+
 }
