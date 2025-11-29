@@ -12,7 +12,7 @@ using namespace std;
 int main() 
 {
     string txt = "the quick brown fox jumps over the lazy dog";
-    string pattern = "the";
+    string pattern = "the"; 
 
     int txtlen = txt.length();
     int patlen = pattern.length();
