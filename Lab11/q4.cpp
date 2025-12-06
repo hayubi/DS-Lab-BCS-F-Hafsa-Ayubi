@@ -9,7 +9,7 @@ Output: (4, 12) and (7, 9)
 Explanation: 4+12 = 7+9
 Input: {65, 30, 7, 90, 1, 9, 8};
 Output: No pairs found*/
-
+  
 #include <iostream>
 using namespace std;
 
@@ -58,4 +58,5 @@ int main()
     findPairs(arr1, 7);
     findPairs(arr2, 6);
     findPairs(arr3, 7);
+
 }
